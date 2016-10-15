@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+    <!--ONLY one direct child node to siteMap tag--><siteMapNode url="~/Label.aspx" title="home"  description="home">
+        
+      <siteMapNode url="~/Label.aspx?" title="home"  description="home" /><!--multiple nodes e same URL give err, so added '?'-->
+      <siteMapNode url="~/Survey.aspx" title="survey"  description="survey" />
+      <siteMapNode url="#" title="dummy"  description="" />
+      <siteMapNode url="#1" title="dummy"  description="" /> <!--URL must be unique so added 1,2,3; else err-->
+      <siteMapNode url="#2" title="dummy"  description="" />
+      <siteMapNode url="#3" title="dummy"  description="" />
+      
+
+    <!--end of the ONLY direct child node--></siteMapNode>
+</siteMap>

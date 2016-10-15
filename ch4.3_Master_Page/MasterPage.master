@@ -1,0 +1,25 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+            
+        <p>
+            This is default contect inside masterPage PH. To be displayed if the webForm doesn't provide any content.<br>
+            It shows up ONLY IF no asp:content tag present in the web-form.
+        </p>
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
